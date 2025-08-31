@@ -13,7 +13,7 @@ git config --global color.ui "auto"
 ```
 Then get `sfbootstrap`:
 ```bash
-git clone https://github.com/JamiKettunen/sfbootstrap.git
+git clone https://github.com/SailfishOS-miatoll/sfbootstrap.git
 cd sfbootstrap
 ```
 ### Existing (Hybris) ports
@@ -21,7 +21,7 @@ cd sfbootstrap
 # to choose your device interactively:
 ./sfbootstrap.sh init
 # or if you know it's name already:
-./sfbootstrap.sh init vendor-device
+./sfbootstrap.sh init xiaomi-miatoll
 # if you're interested about the port details:
 ./sfbootstrap.sh status
 

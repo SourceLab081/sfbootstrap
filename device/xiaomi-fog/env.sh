@@ -18,7 +18,7 @@ RELEASE=5.0.0.67
 TOOLING_RELEASE=5.0.0.62
 SDK_RELEASE=latest
 REPOS=(
-    'https://bitbucket.org/thexperienceproject/yuki-clang.git' prebuilts/yuki-clang "18.0.0" 1
+    'https://gitlab.com/TheXPerienceProject/yuki_clang.git' prebuilts/yuki-clang "18.0.0" 1
     'https://github.com/mer-hybris/libhybris.git' hybris/mw/libhybris "master" 1
 )
 #LINKS=()

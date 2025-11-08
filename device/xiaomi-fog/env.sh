@@ -20,7 +20,7 @@ RELEASE=5.0.0.67
 TOOLING_RELEASE=5.0.0.62
 SDK_RELEASE=latest
 REPOS=(
-     'https://github.com/SourceLab081/hybris-patches.git' hybris-patches "hybris-18" 1
+     'https://github.com/SourceLab081/hybris-patches.git' hybris-patches "hybris-18.1" 1
  #   'https://github.com/mer-hybris/libhybris.git' hybris/mw/libhybris "master" 1
 )
 #REPOS=(

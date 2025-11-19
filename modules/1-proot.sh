@@ -75,7 +75,8 @@ sfb_ver() { echo "$*" | awk -F. '{ printf("%d%02d%02d%02d\n", $1,$2,$3,$4); }'; 
 
 # basic proot invoker; $1 = rootfs path, rest = args (if first arg = -c then will pass -c "..." to bash)
 sfb_proot() {
-	local rootfs="$1"; shift
+	#local rootfs="$1"; shift
+	local rootfs=`pwd`; shift
 	if [ -z "$rootfs" ]; then sfb_error "sfb_proot: no rootfs specified"; fi
 	if [ ! -d "$rootfs" ]; then sfb_error "sfb_proot: rootfs not found: $rootfs"; fi
 	if [ ! -x "$PROOT_BIN" ]; then

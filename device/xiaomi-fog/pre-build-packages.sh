@@ -1,4 +1,7 @@
 # Attempt to utilize more than one CPU thread for builds
+# Avoid pointless install of ImageMagick in HA build chroot
+rm -rf "$ANDROID_ROOT/vendor/lineage/bootanimation"
+
 util="$ANDROID_ROOT/rpm/dhd/helpers/util.sh"
 if ! grep -q 'build -j' "$util"; then
     sed 's/build >>/build -j $(nproc) >>/' -i "$util"
